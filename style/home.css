@@ -1,0 +1,135 @@
+/*
+ * Home.css
+ *
+ * @author Richard Underwood
+ * @email c4po187@gmail.com
+ *
+ * @package thermalmax
+ *
+ * @summary
+ * This stylesheet defines styles for the home/index page.
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Nova+Square);
+
+html, body {
+	background: url('../img/glass.jpg') no-repeat top left fixed;
+	background-size: cover;
+}
+
+#home_content {
+	height: 61.5%;
+	margin-top: 2%;
+	border-bottom: .175vw ridge rgba(0, 100, 100, .2);
+}
+
+#hc_left {
+	position: relative;
+	float: left;
+	max-width: 65%;
+}
+
+#outer_features {
+	position: relative;
+	float: left;
+	height: 40%;
+	width: 75%;
+	margin-top: 12%;
+	margin-bottom: 3%;
+	background-color: rgba(0, 102, 102, .35);
+	border-radius: 1vw;
+	box-shadow: .1vw .1vw .9vw .1vw #333333;
+}
+
+#inner_features {
+	position: absolute;
+	width: 90%;
+	height: 70%;
+	left: 1.75%;
+	top: 5%;
+	padding: 2.75%;
+	border-radius: 1vw;
+	border: .225vw solid #cdcdcd;
+}
+
+#feature {
+	color: rgba(239, 239, 239, 1.0);
+	font-family: 'Varela Round', sans-serif;
+	font-size: 2.25vw;
+}
+
+#task_shortcuts {
+	position: relative;
+	float: left;
+	width: 75%;
+	height: 10%;
+	display: inline;
+	padding-left: .25%;
+}
+
+.task_button {
+	position: relative;
+	width: 35%;
+	height: 95%;
+	border-radius: 3vw;
+	transition: .3s all ease;
+	background: #330066;
+	padding: .15vw;
+	-webkit-box-reflect: below 15% -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.125)));
+	outline: none;
+}
+
+.task_button > p {
+	color: white;
+	font-family: 'Nova Square', cursive;
+	font-size: 1.025vw;
+}
+
+.task_button:focus {
+	outline: none;
+}
+
+.task_button:hover {
+	height: 100%;
+	cursor: pointer;
+	background: #003366;
+	border-radius: 1.25vw;
+	box-shadow: .05vw .05vw .15vw #222222;
+}
+
+#ltask {
+	float: left;
+	margin-left: 10%;
+}
+
+#rtask {
+	float: right;
+	margin-right: 10%;
+}
+
+#hc_right {
+	position: relative;
+	float: right;
+	max-width: 30%;
+	padding-right: 5%;
+}
+
+#showcase {
+	width: 100%;
+	height: 42.125%;
+	margin-top: 24%;
+	border-radius: 1.25vw;
+	box-shadow: .1vw .1vw .25vw #333333;
+	-webkit-box-reflect: below 7.5% -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.225)));
+}
+
+#rosette {
+	transform: rotate(-15deg);
+	position: absolute;
+	height: 60%;
+	width: 50%;
+	left: -30%;
+	bottom: 10%;
+	z-index: 1;
+}

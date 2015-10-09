@@ -1,0 +1,124 @@
+/*
+ * Common.css
+ *
+ * @author Richard Underwood
+ * @email c4po187@gmail.com
+ *
+ * @package thermalmax
+ *
+ * @summary
+ * This stylesheet defines global styles spanning
+ * across the entire site.
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Nova+Square);
+
+* {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+html, body {
+	position: relative;
+	min-width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+img {
+	padding: 0;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.centralize {
+	margin: 0 auto;
+	width: 80%;
+}
+
+#head_wrapper {
+	position: relative;
+	height: 20%;
+	margin-top: .25vw;
+	overflow: hidden;
+	border-bottom: 2px ridge #003333;
+}
+
+#logo_container {
+	position: absolute;
+	padding: 0;
+	width: 30%;
+	height: 85%;
+	display: inline;
+	bottom: .3vw;
+}
+
+#nav_container {
+	position: absolute;
+	width: 65%;
+	height: 20%;
+	bottom: .4vw;
+	right: 0;
+	text-align: right;
+	font-family: 'Nova Square', cursive;
+	font-size: 1.25vw;
+}
+
+#nav_container nav > * {
+	position: absolute;
+	top: 40%;
+	right: 1%;
+}
+
+#nav_container li {
+	display: inline;
+}
+
+#nav_container a {
+	text-decoration: none;
+	padding: .1vw 1vw .1vw 1vw;
+	color: #0000ff;
+}
+
+#nav_container a:hover {
+	color: #006666;
+	font-weight: bold;
+}
+
+footer {
+	position: absolute;
+	text-align: center;
+	height: 10%;
+	font-size: 1vw;
+	left: 10%;
+	bottom: 1.75%;
+}
+
+footer > pre, p {
+	margin-top: 5%;
+	font-family: 'Nova Square', cursive;
+	font-size: 0.8vw;
+	color: #003333;
+}
+
+#share_buttons {
+	position: absolute;
+	top: 1.5%;
+	left: 30%;
+	height: 55%;
+	width: 40%;
+}
+
+#share_buttons img {
+	width: 10%;
+	padding: .5vw;
+	border: 0;
+	box-shadow: 0;
+	display: inline;
+}
+
+#share_buttons a {
+	text-decoration: none;
+}

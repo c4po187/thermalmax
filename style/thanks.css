@@ -1,0 +1,45 @@
+/*
+ * Thanks.css
+ *
+ * @author Richard Underwood
+ * @email c4po187@gmail.com
+ *
+ * @package thermalmax
+ *
+ * @summary
+ * This stylesheet defines styles for the Thank you page.
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Nova+Square);
+
+html, body {
+	background: url('../img/std_bg.jpg') no-repeat top left fixed;
+	background-size: cover;
+}
+
+.centralize > h1 {
+	margin-top: 1%;
+	font-family: 'Nova Square', cursive;
+	font-size: 5vh;
+	color: #666;
+	margin-left: 1%;
+}
+
+#t_msg {
+	position: relative;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 2vh;
+	color: #000;
+	top: -92.5%;
+	margin-left: 1%;
+}
+
+pre {
+	position: relative;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 2vh;
+	color: #000;
+	top: -90%;
+	margin-left: 1%;
+}

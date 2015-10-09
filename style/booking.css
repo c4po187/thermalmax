@@ -1,0 +1,171 @@
+/*
+ * Booking.css
+ *
+ * @author Richard Underwood
+ * @email c4po187@gmail.com
+ *
+ * @package thermalmax
+ *
+ * @summary
+ * This stylesheet defines styles for the bookings page.
+ */
+ 
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Nova+Square);
+
+html, body {
+	background: url('../img/std_bg.jpg') no-repeat top left fixed;
+	background-size: cover;
+}
+
+#container {
+	width: 76vw;
+	height: 62.5vh;
+	padding: 1.25vh 1.25vw 1.25vh 1.25vw;
+	font-family: 'Varela Round', sans-serif;
+	font-size: .8vw;
+}
+
+#container > h1 {
+	font-family: 'Nova Square', cursive;
+	color: #666666;
+}
+
+#form_wrapper {
+	position: absolute;
+	width: 76vw;
+	height: 57.5vh;
+	top: 27.5%;
+}
+
+/*
+div {
+	border: 1px dashed black;
+}
+
+#form_wrapper > table, th, td {
+	border: 1px solid black;
+}
+*/
+
+#form_wrapper > table, form {
+	width: 100%;
+}
+
+#form_wrapper table, th, tr, td  {
+	height: 2vh;
+	border-collapse: collapse;
+}
+
+#form_wrapper td {
+	padding: .35vw;
+}
+
+#form_wrapper input {
+	padding: .2vw;
+	font-family: 'Varela Round', sans-serif;
+	font-size: .7vw;
+	width: 90%;
+}
+
+#form_wrapper label {
+	display: block;
+	float: left;
+	position: relative;
+	top: .5vh;
+}
+
+.chk {
+	width: 1.5em;
+	height: 1.5em;
+	position: absolute;
+	bottom: 25%;
+	right: -30%;
+}
+
+.tlabel {
+	width: 15%;
+}
+
+.entries {
+	width: 35%;
+	vertical-align: center;
+}
+
+.color_choices {
+	width: 20%;
+}
+
+.cust_select {
+	width: 97.5%;
+	height: 95%;
+	overflow: hidden;
+	background: url('../img/select_arrow.png') no-repeat right;
+	background-size: 1.75em 1.75em;
+	border: 1px solid #bcbcbc;
+	border-radius: .5vw;
+}
+
+.cust_select select {
+	background: transparent;
+	font-family: 'Varela Round', sans-serif;
+	font-size: .8vw;
+	line-height: 1;
+	border: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+	padding: 1% 0 0 2%;
+	outline: none;
+}
+
+.cust_select select:active, select:hover {
+	outline: none;
+}
+
+.cust_select select > option {
+	outline: none;
+	border-radius: 2% !important;
+}
+
+#book_btn_cell {
+	height: 5vh;
+}
+
+#book_btn {
+	width: 20% !important;
+	height: 4vh;
+	float: right;
+	border: none;
+	transition: .3s all ease;
+	background: #330066;
+	padding: .15vw;
+	border-radius: 3vw;
+	padding-top: .325% !important;
+	margin-right: -.5%;
+}
+
+#book_btn[type=submit] {
+	color: white;
+	font-family: 'Nova Square', cursive;
+	font-size: 1.2em;
+}
+
+#book_btn:focus {
+	outline: none;
+	padding-top: .325% !important;
+}
+
+#book_btn:hover {
+	height: 4.2vh;
+	cursor: pointer;
+	background: #003366;
+	border-radius: 1.25vw;
+	box-shadow: .2vw .2vw .3vw #222222;
+	padding-top: .575% !important;
+}
+
+#form_mandatory {
+	font-family: 'Varela Round', sans-serif;
+	font-size: .9vw;
+	margin-top: 1%;
+}
