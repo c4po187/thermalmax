@@ -24,10 +24,10 @@
 				<nav>
 					<ul>
 						<li><a href="index.php">Home</a></li>
-						<li><a href="#">About Us</a></li>
+						<li><a href="about.php">About Us</a></li>
 						<li><a href="#">Product Profile</a></li>
 						<li><a href="#">Install/Upgrade</a></li>
-						<li><a href="#">Contact Us</a></li>
+						<li><a href="contact.php">Contact Us</a></li>
 					</ul>
 				</nav>
 			</div>

@@ -1,0 +1,108 @@
+/*
+ * About.css
+ *
+ * @author Richard Underwood
+ * @email c4po187@gmail.com
+ *
+ * @package thermalmax
+ *
+ * @summary
+ * This stylesheet defines styles for the about page.
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Nova+Square);
+
+html, body {
+	background: url('../img/std_bg.jpg') no-repeat top left fixed;
+	background-size: cover;
+}
+
+.heading_about {
+	font-family: 'Nova Square', cursive;
+	font-size: 2em;
+	color: #666;
+	text-align: center;
+}
+
+#top_about, #bottom_about {
+	position: absolute;
+	width: 80%;
+}
+
+#top_about {
+	height: 30%;
+	top: 21%;
+}
+
+#bottom_about {
+	height: 35%;
+	top: 53%;
+}
+
+#left_top, #right_top {
+	position: relative;
+	width: 48%;
+	height: 100%;
+	padding: .5%;
+}
+
+#left_top {
+	float: left;
+}
+
+#left_content, #right_content {
+	position: absolute;
+	height: 60%;
+	top: 18%;
+	padding: 2%;
+}
+
+#left_content {
+	width: 45%;
+	left: 25%;
+	text-align: left;
+	background: rgba(0, 60, 225, .7);
+	border-radius: 1.5em;
+	box-shadow: .4em .4em 1em #333;
+}
+
+#left_content > pre {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	color: #FFF;
+}
+
+#right_top {
+	float: right;
+}
+
+#right_content {
+	width: 93%;
+}
+
+#list, #list > li {
+	height: 1.75em;
+}
+
+#list {
+	padding-left: 40.5%;
+	list-style-image: url('../img/bullet.png');
+}
+
+#list > li {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.5em;
+	padding-left: 6%;
+}
+
+#triple {
+	height: 80%;
+	width: 60%;
+	position: absolute;
+	top: 15%;
+	left: 20%;
+	outline: solid .25em;
+	box-shadow: .6em .6em 1em #000;
+}

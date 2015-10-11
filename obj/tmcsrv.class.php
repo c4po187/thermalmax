@@ -46,7 +46,9 @@ class tmcsrv {
 				self::REL_URI.'index.php', 
 				self::REL_URI.'booking.php', 
 				self::REL_URI.'thanks.php',
-				self::REL_URI.'wicked.php');
+				self::REL_URI.'wicked.php',
+				self::REL_URI.'contact.php',
+				self::REL_URI.'about.php');
 		}
 		return self::$s_instance;
 	}
@@ -193,12 +195,33 @@ class tmcsrv {
 				break;
 			case $this->m_pages[1]:
 				$this->m_smarty->assign('sel_arw', 'img/select_arrow.png');
+				$this->m_smarty->assign('col_w', 'White');
+				$this->m_smarty->assign('col_at', 'Antique Teak');
+				$this->m_smarty->assign('col_io', 'Irish Oak');
+				$this->m_smarty->assign('col_go', 'Golden Oak');
+				$this->m_smarty->assign('col_ma', 'Mahogany');
+				$this->m_smarty->assign('col_cr', 'Cream');
+				$this->m_smarty->assign('col_sc', 'Soft Cherry');
+				$this->m_smarty->assign('col_rc', 'Rustic Cherry');
+				$this->m_smarty->assign('col_ro', 'Rosewood');
+				$this->m_smarty->assign('col_b', 'Black');
+				$this->m_smarty->assign('col_g', 'Grey');
+				$this->m_smarty->assign('col_cg', 'Chartwell Green');
+				$this->m_smarty->assign('col_gr', 'Green');
+				$this->m_smarty->assign('col_re', 'Red');
+				$this->m_smarty->assign('col_st', 'Stahlblau');
 				break;
 			case $this->m_pages[2]:
 				// Start mysqli
-				$m_mysqli = new mysqli("localhost", "root", "CAPOdiTUTTIcapi", "thermalmax");
+				$this->m_mysql = new mysqli("localhost", "root", "CAPOdiTUTTIcapi", "thermalmax");
 				break;
 			case $this->m_pages[3]:
+				break;
+			case $this->m_pages[4]:
+				$this->m_smarty->assign('ema', 'thermalmax@benchmarklearning.co.uk');
+				break;
+			case $this->m_pages[5]:
+				$this->m_smarty->assign("ben", "Benefits of Triple Glazing");
 				break;
 			default:
 				echo 'Something wicked happened!';

@@ -12,7 +12,7 @@
 					<button id="ltask" class="task_button" onclick="location.href='booking.php';">
 						<p>Make a booking<p>
 					</button>
-					<button id="rtask" class="task_button">
+					<button id="rtask" class="task_button" onclick="location.href='contact.php';">
 						<p>Make an appointment</p>
 					</button>
 				</div>

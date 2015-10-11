@@ -1,16 +1,16 @@
-<?php /* Smarty version 3.1.28-dev/63, created on 2015-10-08 16:31:47
+<?php /* Smarty version 3.1.28-dev/63, created on 2015-10-11 02:42:02
          compiled from "C:\xampp\htdocs\workspace\thermalmax\header.tpl" */ ?>
 <?php
 $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
   'version' => '3.1.28-dev/63',
-  'unifunc' => 'content_56167e54000003_76605345',
+  'unifunc' => 'content_5619b05ab1ffd4_06841346',
   'file_dependency' => 
   array (
     '0124e015d1571eaf59670c8151aeb3fa457a306a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\workspace\\thermalmax\\header.tpl',
-      1 => 1444314702,
+      1 => 1444524118,
       2 => 'file',
     ),
   ),
@@ -18,8 +18,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   array (
   ),
 ),false);
-if ($_valid && !is_callable('content_56167e54000003_76605345')) {
-function content_56167e54000003_76605345 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5619b05ab1ffd4_06841346')) {
+function content_5619b05ab1ffd4_06841346 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!-- Start Header -->
@@ -58,10 +58,10 @@ _logo" title="<?php echo $_smarty_tpl->tpl_vars['name']->value;?>
 				<nav>
 					<ul>
 						<li><a href="index.php">Home</a></li>
-						<li><a href="#">About Us</a></li>
+						<li><a href="about.php">About Us</a></li>
 						<li><a href="#">Product Profile</a></li>
 						<li><a href="#">Install/Upgrade</a></li>
-						<li><a href="#">Contact Us</a></li>
+						<li><a href="contact.php">Contact Us</a></li>
 					</ul>
 				</nav>
 			</div>
