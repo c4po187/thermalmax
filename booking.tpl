@@ -34,28 +34,28 @@
 							<td class="entries">{literal}<input class="i_fields" type="text" name="surname" required pattern="([A-Z][a-z]{1,25}-?){1,2}" onchange="try{setCustomValidity('')}catch(e){}" />{/literal}</td>
 							<td class="tlabel"></td>
 							<td class="tlabel"><label>Doors<input class="chk" type="checkbox" name="req[]" value="Door" /></label></td>
-							<td class="color_choices">{include file="color_select.tpl" color_s="color_doors"}</</td>
+							<td class="color_choices">{include file="color_select.tpl" color_s="color_doors"}</td>
 						</tr>
 						<tr>
 							<td class="tlabel"><b>House Name</b></td>
 							<td class="entries">{literal}<input class="i_fields" type="text" name="house_name" pattern="([A-Za-z]\s?-?)+" />{/literal}</td>
 							<td class="tlabel"></td>
 							<td class="tlabel"><label>Conservatories<input class="chk" type="checkbox" name="req[]" value="Conservatory" /></label></td>
-							<td class="color_choices">{include file="color_select.tpl" color_s="color_conservatories"}</</td>
+							<td class="color_choices">{include file="color_select.tpl" color_s="color_conservatories"}</td>
 						</tr>
 						<tr>
 							<td class="tlabel"><b>Address (Line 1)<span style="color:red;">*</span></b></td>
 							<td class="entries">{literal}<input class="i_fields" type="text" name="addr_line1" required pattern="^\d+\s([A-Z][a-z]{1,50}\s?){1,}$" onchange="try{setCustomValidity('')}catch(e){}" />{/literal}</td>
 							<td class="tlabel"></td>
 							<td class="tlabel"><label>Soffits<input class="chk" type="checkbox" name="req[]" value="Soffit" /></label></td>
-							<td class="color_choices">{include file="color_select.tpl" color_s="color_soffits"}</</td>
+							<td class="color_choices">{include file="color_select.tpl" color_s="color_soffits"}</td>
 						</tr>
 						<tr>
 							<td class="tlabel"><b>Address (Line 2)</b></td>
 							<td class="entries">{literal}<input class="i_fields" type="text" name="addr_line2" pattern="([A-Za-z]\s?-?)+" />{/literal}</td>
 							<td class="tlabel"></td>
 							<td class="tlabel"><label>Fascias<input class="chk" type="checkbox" name="req[]" value="Fascia" /></label></td>
-							<td class="color_choices">{include file="color_select.tpl" color_s="color_fascias"}</</td>
+							<td class="color_choices">{include file="color_select.tpl" color_s="color_fascias"}</td>
 						</tr>
 						<tr>
 							<td class="tlabel"><b>Town/City<span style="color:red;">*</span></b></td>

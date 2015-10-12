@@ -1,16 +1,16 @@
-<?php /* Smarty version 3.1.28-dev/63, created on 2015-10-12 07:22:30
+<?php /* Smarty version 3.1.28-dev/63, created on 2015-10-12 07:40:59
          compiled from "C:\xampp\htdocs\workspace\thermalmax\booking.tpl" */ ?>
 <?php
 $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
   'version' => '3.1.28-dev/63',
-  'unifunc' => 'content_561b439706acf8_60889640',
+  'unifunc' => 'content_561b47eb967123_72598229',
   'file_dependency' => 
   array (
     '91634e0e0c01c10e6e14c3e708435c3d839c19c3' => 
     array (
       0 => 'C:\\xampp\\htdocs\\workspace\\thermalmax\\booking.tpl',
-      1 => 1444627346,
+      1 => 1444628452,
       2 => 'file',
     ),
   ),
@@ -21,8 +21,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'file:footer.tpl' => 1,
   ),
 ),false);
-if ($_valid && !is_callable('content_561b439706acf8_60889640')) {
-function content_561b439706acf8_60889640 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_561b47eb967123_72598229')) {
+function content_561b47eb967123_72598229 ($_smarty_tpl) {
 $_smarty_tpl->setupSubTemplate('file:header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>"Bookings",'page_style'=>"style/booking.css"), 0, false)->render();
 ?>
 
@@ -67,7 +67,7 @@ $_smarty_tpl->setupSubTemplate('file:header.tpl', $_smarty_tpl->cache_id, $_smar
 							<td class="tlabel"><label>Doors<input class="chk" type="checkbox" name="req[]" value="Door" /></label></td>
 							<td class="color_choices"><?php $_smarty_tpl->setupSubTemplate('file:color_select.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('color_s'=>"color_doors"), 0, true)->render();
 ?>
-</</td>
+</td>
 						</tr>
 						<tr>
 							<td class="tlabel"><b>House Name</b></td>
@@ -76,7 +76,7 @@ $_smarty_tpl->setupSubTemplate('file:header.tpl', $_smarty_tpl->cache_id, $_smar
 							<td class="tlabel"><label>Conservatories<input class="chk" type="checkbox" name="req[]" value="Conservatory" /></label></td>
 							<td class="color_choices"><?php $_smarty_tpl->setupSubTemplate('file:color_select.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('color_s'=>"color_conservatories"), 0, true)->render();
 ?>
-</</td>
+</td>
 						</tr>
 						<tr>
 							<td class="tlabel"><b>Address (Line 1)<span style="color:red;">*</span></b></td>
@@ -85,7 +85,7 @@ $_smarty_tpl->setupSubTemplate('file:header.tpl', $_smarty_tpl->cache_id, $_smar
 							<td class="tlabel"><label>Soffits<input class="chk" type="checkbox" name="req[]" value="Soffit" /></label></td>
 							<td class="color_choices"><?php $_smarty_tpl->setupSubTemplate('file:color_select.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('color_s'=>"color_soffits"), 0, true)->render();
 ?>
-</</td>
+</td>
 						</tr>
 						<tr>
 							<td class="tlabel"><b>Address (Line 2)</b></td>
@@ -94,7 +94,7 @@ $_smarty_tpl->setupSubTemplate('file:header.tpl', $_smarty_tpl->cache_id, $_smar
 							<td class="tlabel"><label>Fascias<input class="chk" type="checkbox" name="req[]" value="Fascia" /></label></td>
 							<td class="color_choices"><?php $_smarty_tpl->setupSubTemplate('file:color_select.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('color_s'=>"color_fascias"), 0, true)->render();
 ?>
-</</td>
+</td>
 						</tr>
 						<tr>
 							<td class="tlabel"><b>Town/City<span style="color:red;">*</span></b></td>
