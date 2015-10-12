@@ -38,16 +38,6 @@ html, body {
 	top: 27.5%;
 }
 
-/*
-div {
-	border: 1px dashed black;
-}
-
-#form_wrapper > table, th, td {
-	border: 1px solid black;
-}
-*/
-
 #form_wrapper > table, form {
 	width: 100%;
 }
@@ -75,12 +65,18 @@ div {
 	top: .5vh;
 }
 
-.chk {
+.i_fields, .i_fields:focus, .i_fields:hover {
+	border-radius: .5vw;
+	outline: none;
+}
+
+.chk, .chk:focus, .chk:hover {
 	width: 1.5em;
 	height: 1.5em;
 	position: absolute;
 	bottom: 25%;
 	right: -30%;
+	outline: none;
 }
 
 .tlabel {
