@@ -1,4 +1,4 @@
-{include file="header.tpl" page_style="style/home.css"}
+{include file="header.tpl" page_style="style/home.css" title="Thermal Max Windows"}
 		<!-- Main Body -->
 		<script src="script/featurette.js" type="text/javascript"></script>
 		<div class="centralize" id="home_content">
@@ -9,10 +9,10 @@
 					</div>
 				</div>
 				<div id="task_shortcuts">
-					<button id="ltask" class="task_button" onclick="location.href='booking.php';">
-						<p>Make a booking<p>
+					<button class="task_button ltask" onclick="location.href='booking.php';">
+						<p>Make a booking</p>
 					</button>
-					<button id="rtask" class="task_button" onclick="location.href='contact.php';">
+					<button class="task_button rtask" onclick="location.href='contact.php';">
 						<p>Make an appointment</p>
 					</button>
 				</div>

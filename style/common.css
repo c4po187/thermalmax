@@ -41,9 +41,10 @@ img {
 #head_wrapper {
 	position: relative;
 	height: 20%;
-	margin-top: .25vw;
+	margin-top: .35%;
 	overflow: hidden;
-	border-bottom: 2px ridge #003333;
+	border-bottom: 1px ridge #003333;
+	font-size: inherit;
 }
 
 #logo_container {
@@ -52,24 +53,30 @@ img {
 	width: 30%;
 	height: 85%;
 	display: inline;
-	bottom: .3vw;
+	bottom: 3%;
+}
+
+#logo_container a {
+	position: inherit;
+	font-size: .1%;
+	top: 0;
 }
 
 #nav_container {
 	position: absolute;
 	width: 65%;
 	height: 20%;
-	bottom: .4vw;
+	bottom: 4%;
 	right: 0;
 	text-align: right;
 	font-family: 'Nova Square', cursive;
-	font-size: 1.25vw;
+	font-size: 1.3%;
 }
 
 #nav_container nav > * {
 	position: absolute;
 	top: 40%;
-	right: 1%;
+	right: .25%;
 }
 
 #nav_container li {
@@ -78,7 +85,7 @@ img {
 
 #nav_container a {
 	text-decoration: none;
-	padding: .1vw 1vw .1vw 1vw;
+	padding: 1% 0 1% 4%;
 	color: #0000ff;
 }
 
@@ -91,21 +98,14 @@ footer {
 	position: absolute;
 	text-align: center;
 	height: 10%;
-	font-size: 1vw;
+	font-size: 1%;
+	bottom: 1.5%;
 	left: 10%;
-	bottom: 1.75%;
-}
-
-footer > pre, p {
-	margin-top: 5%;
-	font-family: 'Nova Square', cursive;
-	font-size: 0.8vw;
-	color: #003333;
 }
 
 #share_buttons {
 	position: absolute;
-	top: 1.5%;
+	top: 0;
 	left: 30%;
 	height: 55%;
 	width: 40%;
@@ -113,12 +113,26 @@ footer > pre, p {
 
 #share_buttons img {
 	width: 10%;
-	padding: .5vw;
+	padding: 0 1% 0 1%;
 	border: 0;
 	box-shadow: 0;
-	display: inline;
 }
 
 #share_buttons a {
 	text-decoration: none;
+	color: transparent;
+}
+
+#f_info {
+	height: 15%;
+	width: inherit;
+	text-align: center;
+	font-family: 'Nova Square', cursive;
+	font-size: 85%;
+	color: #003333;
+	display: inline-block;
+	vertical-align: 100%;
+	position: absolute;
+	bottom: 5%;
+	left: 10%;	
 }

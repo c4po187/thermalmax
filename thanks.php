@@ -19,7 +19,7 @@ session_start();
 
 // Display the thanks template, providing our server is OK
 if (tmcsrv::get_singleton()->essentials_up()) {
-	tmcsrv::get_singleton()->init_global_smarty_params($_SERVER['REQUEST_URI']);
+	tmcsrv::get_singleton()->init_global_smarty_params('/home/thermalm/public_html/thanks.php');
 	
 	// Check that mysqli is ok, if not display our error page
 	if (tmcsrv::get_singleton()->get_mysql()->connect_error) {
@@ -28,13 +28,11 @@ if (tmcsrv::get_singleton()->essentials_up()) {
 		tmcsrv::get_singleton()->get_smarty()->display('thanks.tpl');
 	}
 	
-	$n = 'N/A';
+	// Vars
 	$id = 0;
-	
-	/*
-	$task_count = count($_POST['req']);
-	echo "<h2>".$task_count."</h2>";
-	*/
+	$n = 'N/A';
+	$null_ = null;
+	$reqs = array(0 => $null_, 1 => $null_, 2 => $null_, 3 => $null_, 4 => $null_);
 	
 	// Grab all existing booking form values from POST
 	$fn = isset($_POST['first_name']) ? $_POST['first_name'] : $n;
@@ -59,8 +57,6 @@ if (tmcsrv::get_singleton()->essentials_up()) {
 	// First up, create a query to add the customer 
 	$qry_cust = "INSERT INTO customers VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 	
-	$null_ = null;
-	
 	// Create a statement object, bind our parameters and execute the query
 	$stmt_cust = tmcsrv::get_singleton()->get_mysql()->prepare($qry_cust);
 	$stmt_cust->bind_param('isssssssssss', $null_, $fn, $sn, $hn, $a1, $a2, $tc, $cy, $pc, $ph, $mo, $em);
@@ -79,10 +75,6 @@ if (tmcsrv::get_singleton()->essentials_up()) {
 	$stmt_last->bind_result($id);
 	$stmt_last->fetch();
 	$stmt_last->close();
-	
-	//echo "<h2>".$id."</h2>";
-	
-	$reqs = array(0 => $null_, 1 => $null_, 2 => $null_, 3 => $null_, 4 => $null_);
 	
 	/* We need to reorganize our POST requirements array and fill up the reqs array, 
 	   in order for the indices to match the colors array below. */
@@ -107,16 +99,12 @@ if (tmcsrv::get_singleton()->essentials_up()) {
 		elseif ($reqs[3] === 'Soffit' and $i === 3) $run = true;
 		elseif ($reqs[4] === 'Fascia' and $i === 4) $run = true;
 		
-		$row = null;
-		
 		if ($run) {
 			// Get the product id
 			$pid = 0;
-			$req_i = $reqs[$i];
-			$color_i = $colors[$i];
 			$qry_prod = "SELECT product_id FROM products WHERE name = ? AND attributes = ?";
 			$stmt_prod = tmcsrv::get_singleton()->get_mysql()->prepare($qry_prod);
-			$stmt_prod->bind_param('ss', $req_i, $color_i);
+			$stmt_prod->bind_param('ss', $reqs[$i], $colors[$i]);
 			$stmt_prod->execute();
 			$stmt_prod->bind_result($pid);
 			$stmt_prod->fetch();

@@ -16,7 +16,7 @@
 
 require 'obj/tmcsrv.class.php';
 
-tmcsrv::get_singleton()->init_global_smarty_params($_SERVER['REQUEST_URI']);
+tmcsrv::get_singleton()->init_global_smarty_params('/home/thermalm/public_html/wicked.php');
 tmcsrv::get_singleton()->get_smarty()->display('wicked.tpl');
 
 ?>

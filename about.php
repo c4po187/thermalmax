@@ -21,8 +21,10 @@ session_start();
 
 // Display the booking template, providing our server is OK
 if (tmcsrv::get_singleton()->essentials_up()) {
-	tmcsrv::get_singleton()->init_global_smarty_params($_SERVER['REQUEST_URI']);
-	tmcsrv::get_singleton()->get_smarty()->display('about.tpl');
+	tmcsrv::get_singleton()->init_global_smarty_params('/home/thermalm/public_html/about.php');
+	//tmcsrv::get_singleton()->get_smarty()->display('about.tpl');
+	// Open Under construction page until we design a better about page (it was rather rushed)
+	tmcsrv::get_singleton()->get_smarty()->display('uc.tpl');
 } else {
 	tmcsrv::get_singleton()->get_smarty()->display('wicked.tpl');
 }

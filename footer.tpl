@@ -14,7 +14,9 @@
 					<img src="{$sb}{$li}.png" alt="LinkedIn" />
 				</a>
 			</div>
-			<pre>&copy; 2015 {$name}. All rights reserved. | Site by {$author} ({$bl[1]})</pre>
+			<div id="f_info">
+				<pre>&copy; 2015 {$name}. All rights reserved. | Site by {$author} ({$bl[1]})</pre>
+			</div>
 		</footer>
 	</body>
 </html>

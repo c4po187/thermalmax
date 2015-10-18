@@ -21,7 +21,7 @@ html, body {
 #home_content {
 	height: 61.5%;
 	margin-top: 2%;
-	border-bottom: .175vw ridge rgba(0, 100, 100, .2);
+	border-bottom: 2px ridge rgba(0, 100, 100, .2);
 }
 
 #hc_left {
@@ -38,25 +38,24 @@ html, body {
 	margin-top: 12%;
 	margin-bottom: 3%;
 	background-color: rgba(0, 102, 102, .35);
-	border-radius: 1vw;
+	border-radius: 1.25vw;
 	box-shadow: .1vw .1vw .9vw .1vw #333333;
 }
-
 #inner_features {
 	position: absolute;
-	width: 90%;
-	height: 70%;
-	left: 1.75%;
-	top: 5%;
-	padding: 2.75%;
-	border-radius: 1vw;
-	border: .225vw solid #cdcdcd;
+	width: 91%;
+	height: 76%;
+	border: 2px solid #cdcdcd;
+	top: calc(5% - 1px);
+	left: calc(2.5% - 1px);
+	border-radius: 1.25vw;
+	padding: 2%;
 }
 
 #feature {
 	color: rgba(239, 239, 239, 1.0);
 	font-family: 'Varela Round', sans-serif;
-	font-size: 2.25vw;
+	font-size: 2.3%;
 }
 
 #task_shortcuts {
@@ -75,19 +74,12 @@ html, body {
 	border-radius: 3vw;
 	transition: .3s all ease;
 	background: #330066;
-	padding: .15vw;
+	outline: none;
 	-webkit-box-reflect: below 15% -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.125)));
-	outline: none;
-}
-
-.task_button > p {
-	color: white;
 	font-family: 'Nova Square', cursive;
-	font-size: 1.025vw;
-}
-
-.task_button:focus {
-	outline: none;
+	font-size: 1%;
+	color: #fff !important;
+	padding-top: 2%;
 }
 
 .task_button:hover {
@@ -96,14 +88,15 @@ html, body {
 	background: #003366;
 	border-radius: 1.25vw;
 	box-shadow: .05vw .05vw .15vw #222222;
+	padding-top: 2.5%;
 }
 
-#ltask {
+.ltask {
 	float: left;
 	margin-left: 10%;
 }
 
-#rtask {
+.rtask {
 	float: right;
 	margin-right: 10%;
 }
@@ -113,12 +106,13 @@ html, body {
 	float: right;
 	max-width: 30%;
 	padding-right: 5%;
+	font-size: .1%;
 }
 
 #showcase {
 	width: 100%;
 	height: 42.125%;
-	margin-top: 24%;
+	margin-top: 25%;
 	border-radius: 1.25vw;
 	box-shadow: .1vw .1vw .25vw #333333;
 	-webkit-box-reflect: below 7.5% -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.225)));

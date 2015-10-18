@@ -16,7 +16,7 @@
 
 /**	Prerequisites **/
 
-require $_SERVER['DOCUMENT_ROOT'].'/workspace/thermalmax/smarty/libs/Smarty.class.php';
+require ($_SERVER['DOCUMENT_ROOT'].'/smarty/libs/Smarty.class.php');
 
 class tmcsrv {
 	
@@ -24,7 +24,7 @@ class tmcsrv {
 	 * @var 'Class Members'
 	 */
 	
-	const REL_URI = '/workspace/thermalmax/';
+	const REL_URI = '/home/thermalm/public_html/';
 	private static $s_instance = null;
 	private $m_smarty = null;
 	private $m_pages = null;
@@ -48,7 +48,8 @@ class tmcsrv {
 				self::REL_URI.'thanks.php',
 				self::REL_URI.'wicked.php',
 				self::REL_URI.'contact.php',
-				self::REL_URI.'about.php');
+				self::REL_URI.'about.php',
+				self::REL_URI.'uc.php');
 		}
 		return self::$s_instance;
 	}
@@ -171,7 +172,7 @@ class tmcsrv {
 	 *
 	 * @return void
 	 */
-	public function init_global_smarty_params($uri = 0) {
+	public function init_global_smarty_params($uri = '') {
 		$this->m_smarty->assign('name', 'Thermal Max');
 		$this->m_smarty->assign('author', 'Richard Underwood');
 		$this->m_smarty->assign('bl', array('Benchmark Learning', 'benchmarklearning.co.uk'));
@@ -187,14 +188,14 @@ class tmcsrv {
 		
 		switch ($uri) {
 			case $this->m_pages[0]:
-				$this->m_smarty->assign('next_ft', 'img/icon-next.png');
-				$this->m_smarty->assign('showcase', 'img/showcase.png');
+				$this->m_smarty->assign('next_ft', '../img/icon-next.png');
+				$this->m_smarty->assign('showcase', '../img/showcase.png');
 				$this->m_smarty->assign('exq_aes', 'Exquisite Aesthetics');
-				$this->m_smarty->assign('rosette', 'img/rosette.png');
+				$this->m_smarty->assign('rosette', '../img/rosette.png');
 				$this->m_smarty->assign('r10y', '10 Years Guarantee');
 				break;
 			case $this->m_pages[1]:
-				$this->m_smarty->assign('sel_arw', 'img/select_arrow.png');
+				$this->m_smarty->assign('sel_arw', '..img/select_arrow.png');
 				$this->m_smarty->assign('col_w', 'White');
 				$this->m_smarty->assign('col_at', 'Antique Teak');
 				$this->m_smarty->assign('col_io', 'Irish Oak');
@@ -212,8 +213,8 @@ class tmcsrv {
 				$this->m_smarty->assign('col_st', 'Stahlblau');
 				break;
 			case $this->m_pages[2]:
-				// Start mysqli
-				$this->m_mysql = new mysqli("localhost", "root", "CAPOdiTUTTIcapi", "thermalmax");
+				// Start mysqli, parameters removed for security reasons
+				$this->m_mysql = new mysqli("", "", "", "");
 				break;
 			case $this->m_pages[3]:
 				break;
@@ -222,6 +223,8 @@ class tmcsrv {
 				break;
 			case $this->m_pages[5]:
 				$this->m_smarty->assign("ben", "Benefits of Triple Glazing");
+				break;
+			case $this->m_pages[6]:
 				break;
 			default:
 				echo 'Something wicked happened!';
